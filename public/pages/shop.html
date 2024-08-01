@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page - Gomes1 Fashion</title>
+
+    <link rel="shortcut icon" href="/public/assets/images/icons/logo2.ico"type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <style>
+        #productModal {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #productModal.visible {
+            opacity: 1;
+        }
+
+        #productModal.hidden {
+            opacity: 0;
+            pointer-events: none;
+            /* Disable pointer events when hidden */
+        }
+    </style>
+    <script src="../pages/shopFunctionality.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="py-2 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            <a href="../index.html">
+                <img src="../assets/images/logo2.png" alt="Logo" class="w-32">
+            </a>
+        </div>
+    </header>
+    <!-- ./header -->
+
+    <!-- navbar -->
+
+    <nav class="bg-gray-800">
+        <div class="container flex">
+            <div class="flex items-center justify-between flex-grow md:pl-4 py-5">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="../index.html" class="text-gray-200 hover:text-white transition">Home</a>
+                    <a href="../pages/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                    <a href="../pages/contactUs.html" class="text-gray-200 hover:text-white transition">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ./navbar -->
+
+    <!-- breadcrumb -->
+    <div class="container py-4 flex items-center gap-3">
+        <a href="../index.html" class="text-primary text-base">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">Shop</p>
+    </div>
+    <!-- ./breadcrumb -->
+
+    <!-- shop wrapper -->
+    <div class="container grid md:grid-cols-4 grid-cols-2 gap-2 pt-4 pb-16 items-start">
+        <!-- products -->
+        <div class="col-span-4">
+         
+
+            <div class="grid md:grid-cols-4 grid-cols-2 gap-2">
+
+                <div class="product1 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product1-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="#"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-018
+                            </h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product2 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product2-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-017</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product3 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product3-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-016</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product4 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product4-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-015</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product5 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product5-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-012</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product6 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product6-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-014</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product7 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product7-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-010</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product8 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product8-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-034</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product9 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product9-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-118</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product10 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product10-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-133</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product11 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product11-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-218</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product12 product-container bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img src="../assets/images/product_images/product12-image1.jpg" alt="">
+                        <div class="productImagesContainer hidden"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
+                        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a href="javascript:void(0);"
+                                class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                title="view product">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="javascript:void(0);">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Vlisco Superwax VLS6247-038</h4>
+                        </a>
+                      
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- ./products -->
+        <!-- Overlay -->
+       
+
+
+        <!-- Modal Container -->
+        <div id="productModal"
+            class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2/3 h-2/3 bg-black bg-opacity-50 items-center justify-center z-20">
+            <!-- Modal Content -->
+            <div id="modalContent" class="bg-white p-4 shadow-md w-full rounded-md grid grid-cols-1 md:grid-cols-1 gap-4">
+                <!-- Left Section: Image Gallery -->
+                <div class="col-span-1">
+                    <img id="mainImage" class="w-52 h-52 object-cover mb-4" src="" alt="Main Product Image">
+                </div>
+
+                <!-- Right Section: Product Description and Request a Quote -->
+                <div class="col-span-1 flex flex-col">
+                    <div>
+                        <h2 id="productName" class="text-xl font-semibold mb-2"></h2>
+                        <p id="productDescription" class="text-gray-600 mb-4"></p>
+                    </div>
+                    <div class="mt-auto flex items-end">
+                        <button id="requestQuoteBtn"
+                            class="bg-primary text-white px-4 py-2 rounded hover:bg-transparent hover:text-primary border border-primary transition">Request
+                            a Quote</button>
+                        <button id="closeModalBtn" class="ml-2 text-gray-600 hover:text-red-500">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="overlay" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
+
+
+    </div>
+    <!-- ./shop wrapper -->
+
+    <!-- footer -->
+    <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
+        <div class="container grid grid-cols-1 ">
+            <div class="col-span-1 space-y-4 mb-8">
+                <img src="../assets/images/logo2.png" alt="logo" class="w-36">
+
+            </div>
+
+            <div class="flex flex-wrap gap-4 ml-4">
+                <div class="flex flex-wrap gap-4 md:gap-8 w-full">
+                    <div class="flex-1">
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="../pages/shop.html"
+                                class="text-base text-gray-500 hover:text-gray-900 block">Shop</a>
+                            <a href="../pages/contactUs.html" class="text-base text-gray-500 hover:text-gray-900 block">Contact
+                                Us</a>
+                            <a href="../assets/images/terms-conditions.pdf"
+                                class="text-base text-gray-500 hover:text-gray-900 block" target="_blank">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ./footer -->
+
+    <!-- copyright -->
+    <div class="bg-gray-800 py-4">
+        <div class="container flex items-center justify-between">
+            <p class="text-white">&copy; Gomes1 Fashion - All Right Reserved</p>
+        </div>
+    </div>
+    <!-- ./copyright -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>
