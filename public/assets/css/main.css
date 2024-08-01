@@ -101,7 +101,7 @@ hr {
   border-radius: 0.25rem;
   overflow: hidden;
   width: 100%;
-  max-width: 70%; /* Scaled down from 80% */
+  max-width: 90%; /* Scaled down from 80% */
   align-items: center;
   margin: 0 auto; /* Center the card horizontally */
 }
@@ -125,7 +125,7 @@ hr {
 
 .custom-text-wrap {
   text-align: center;
-  font-size: 0.75rem; /* Further reduced text size */
+  font-size: 0.8rem; /* Further reduced text size */
   color: #4a4a4a;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
@@ -156,7 +156,7 @@ hr {
 
 .custom-about-container {
   padding-bottom: 4rem; /* Spacing at the bottom of the section */
-  max-width: 80%; /* Limits the width to 80% of the viewport width */
+  max-width: 90%; /* Limits the width to 80% of the viewport width */
   margin: 0 auto; /* Centers the container horizontally */
   padding-left: 1rem; /* Adds space from the left edge */
   padding-right: 1rem; /* Adds space from the right edge */
@@ -172,7 +172,7 @@ hr {
 }
 
 .custom-about-text {
-  font-size: 1rem; /* Font size for the text */
+  font-size: 0.9rem; /* Font size for the text */
   color: #6b6b6b; /* Lighter gray color for text */
   font-family: 'Roboto', sans-serif; /* Font family */
   line-height: 1.6; /* Line height for readability */
@@ -192,11 +192,11 @@ hr {
   }
 
   .custom-heading {
-      font-size: 2rem; /* Larger font size for the heading */
+      font-size: 1.5rem; /* Larger font size for the heading */
   }
 
   .custom-about-text {
-      font-size: 1.125rem; /* Slightly larger font size for the text */
+      font-size: 1rem; /* Slightly larger font size for the text */
       padding: 2rem; /* Increased padding inside the text container */
       border-width: 2px; /* Thicker border for better visibility */
   }
